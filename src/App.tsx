@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const gradeLevels: string[] = ["2", "5", "3", "4"];
+
+  let orderedList: (string | number)[] = sortGradeLevels(gradeLevels);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,17 +15,22 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          The ordered list is: ({orderedList.join(", ")})
+        </p>
       </header>
     </div>
   );
 }
 
 export default App;
+
+/**
+ * 
+ * @param gradeLevels unordered list of grades
+ * @returns sorted list of grades in ascending order
+ */
+function sortGradeLevels(gradeLevels : string[]): (string | number)[] {
+
+  return [];
+}
