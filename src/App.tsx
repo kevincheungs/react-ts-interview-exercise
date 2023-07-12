@@ -2,6 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+interface Student {
+  grade: string;
+}
+
+const students: Student[] = [
+  { grade: "10" },
+  { grade: "5" },
+  { grade: "7" },
+  { grade: "3" },
+  { grade: "1" }
+];
+
+/**
+* Main application level code
+*/
 function App() {
 
   const gradeLevels: string[] = ["2", "5", "3", "4"];
